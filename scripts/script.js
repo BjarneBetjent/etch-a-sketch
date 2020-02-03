@@ -1,8 +1,3 @@
-function kad(height)
-{
-    alert(height);
-}
-
 function drawBoard(numberOfDivs)
 {
     let divSize = (720 / numberOfDivs) + "px";
@@ -28,11 +23,23 @@ function hovering(e)
     e.target.style.backgroundColor = "black";
 }
 
-//kad();
+function changeSize()
+{
+    console.log("Enter clicked")
+
+}
+
 let border = "5px solid black"
 const drawingBoard = document.querySelector("#sketch");
 drawingBoard.style.border = border;
 let height = drawingBoard.style.height;
 console.log(drawingBoard.style.border);
-drawBoard(5);
+
+const inputSize = document.querySelector("#inputSize");
+inputSize.addEventListener("keyup", function(e) {
+    if(e.keyCode === 13) changeSize();
+});
+
+
+drawBoard(100);
 

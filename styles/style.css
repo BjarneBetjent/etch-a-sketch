@@ -9,3 +9,7 @@
     outline: 1px solid black;
     float: left;        
 }
+
+#inputSize {
+    border-radius: 5px;
+}
