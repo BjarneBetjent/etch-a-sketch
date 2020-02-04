@@ -5,9 +5,13 @@
     border: 1px solid black;
 }
 
-.sketchHorizontalDiv {
+.sketchBorderDiv {
     outline: 1px solid black;
     float: left;        
+}   
+
+.sketchNoBorderDiv {
+    float: left;
 }
 
 #inputSize {
